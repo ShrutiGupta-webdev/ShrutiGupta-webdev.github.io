@@ -1,0 +1,460 @@
+body {
+	font-family: Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+
+}
+
+header {
+  position: fixed;
+  width: 100%;
+	background-image: linear-gradient( 63.1deg,  rgba(0, 0, 0, 0.5) 16.4%, rgba(0, 20, 61, 0.5) 64.5% );
+	color: #fff;
+	padding: 20px;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  text-align: center;
+  z-index: 3;
+}
+
+nav ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+nav ul li {
+	display: inline-block;
+	margin-right: 20px;
+}
+
+nav ul li a {
+	color: #fff;
+	text-decoration: none;
+  font-size: 1.3rem;
+}
+
+
+
+#hero {
+
+  background-image: url("https://image.lexica.art/full_jpg/8de58abd-6c1b-4b33-bb67-5ca7b195a3fd");
+	background-size: 800px;
+	
+	color: #ffffff;
+	padding: 400px 0;
+	text-align: center;
+  background-repeat: no-repeat;
+}
+#about{
+  background-image: url("https://image.lexica.art/full_jpg/579f72c6-addb-4561-82ce-7a78f399462a");
+  background-size: 100%;
+	background-position: center;
+  color: #ffffff;
+	padding: 100px 0;
+	text-align: center;
+}
+#about h2 {
+	margin-top: 0;
+}
+
+.gallery {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.gallery a {
+	flex: 0 1 calc(33.3% - 10px);
+	margin-bottom: 20px;
+}
+
+.gallery img {
+	display: block;
+	max-width: 100%;
+}
+
+#contact form label {
+	display: block;
+	margin-bottom: 10px;
+}
+.card-container {
+    -webkit-perspective: 500px;
+            perspective: 500px;
+}
+
+.card-container:hover .card{
+    -webkit-transform: rotateY( 180deg );
+            transform: rotateY( 180deg );
+}
+
+.card {
+    -webkit-transition: -webkit-transform 0.7s;
+            transition: transform 0.7s;
+    -webkit-transform-style: preserve-3d;
+            transform-style: preserve-3d;
+}
+
+.front, .back {
+    -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+}
+
+.back {
+    -webkit-transform: rotateY( 180deg );
+            transform: rotateY( 180deg );
+}
+
+/*Custom Styles*/
+.cards-container{
+   display: -webkit-flex;
+   display: -webkit-box;
+   display: -ms-flexbox;
+   display: flex;
+   -webkit-flex-direction: row;
+   -webkit-box-orient: horizontal;
+   -webkit-box-direction: normal;
+       -ms-flex-direction: row;
+           flex-direction: row;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.card {
+  width: 150px;
+	height: 150px;
+  margin: 10px;
+}
+
+.front, .back {
+  box-shadow: 0 1px 6px 0;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  bottom: 0;
+}
+
+img {
+  display: block;
+}
+/* parallex effext css  */
+.parallax {
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display : flex;
+    align-items : center;
+  }
+  
+  .img1 {
+    background-image: url('https://images.pexels.com/photos/1154619/pexels-photo-1154619.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260');
+    height: 100%;
+  }
+  
+  .img2 {
+    background-image: url('https://images.pexels.com/photos/2506209/pexels-photo-2506209.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500');
+    height: 40%;
+  }
+  
+  .img3 {
+    background-image: url('https://images.pexels.com/photos/772520/pexels-photo-772520.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500');
+    height: 70%;
+  }
+  
+  .img4 {
+    background-image: url('https://images.pexels.com/photos/1154619/pexels-photo-1154619.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260');
+    height: 50%;
+  }
+  
+  
+  /* Editing the Divs */
+  .par {
+    position: relative;
+    width: 60%;
+    height: auto;
+    margin: auto;
+    font-size: 15px;
+    background: #F4F4F4;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    text-align: center;
+    vertical-align: middle;
+  }
+  
+  .par3 {
+    color: white;
+    background: #4B4848;
+  }
+  
+  
+  @media only screen and (max-width: 600px) {
+    .parallax {
+      width: 100%;
+      height: 100%;
+    }
+  }
+  /* Contact CSS  */
+  @import url('https://fonts.googleapis.com/css2?family=Red+Hat+Mono:wght@300;378&family=Source+Sans+Pro:ital@1&family=Zen+Antique&display=swap');
+
+/* *{
+  padding:0px;
+  margin:0px;
+}                                
+html {
+  height: 100%;
+}
+body {
+  font-family: 'Red Hat Mono', monospace;
+  background-image:url(
+https://wallpaperaccess.com/full/2797130.png ) ;
+  background-size :cover;
+  background-position :center
+            
+} */
+
+.login-box {
+  
+ 
+  left: 50%;
+  width: 300px;
+  padding: 40px;
+  transform: translate(-50%, -50%);
+  background: rgb(0,85,150);
+  box-sizing: border-box;
+  box-shadow: 0 15px 25px rgba(0,0,0,.6);
+  border-radius: 10px;
+}
+
+.login-box .title{
+  display: flex;
+  align-items: center;
+  width:300px;
+  background-color:rgb(0,85,130);
+  margin: -10px -64px 60px;
+  height:50px;
+  box-shadow :2px 3px 10px 2px black;
+  border-radius:15px;
+  border-bottom-left-radius:0px;
+}
+
+.login-box .title::before{
+  content:"" ;
+ 
+  left:0px;
+  bottom:-24px;
+  border-width:12px;
+  border-color: rgb(0, 45, 90) rgb(0, 45, 90) transparent transparent;
+  border-style:solid;
+  
+}
+.login-box .title .look {
+  
+  margin-left:25px;
+  width:80px;
+  height:80px;
+  border-radius:50%;
+  display:inline-block;
+  background-color:rgb(0,85,130);
+  padding:5px;
+  
+}
+
+.login-box .title .look::after {
+  content:"";
+  
+  top:0px;
+  left:0px;
+  width:100%;
+  height:100%;
+  border-radius:50%;
+  background-color:rgb(0,70,90);
+  z-index:-1;
+  box-shadow :2px 3px 10px 2px black;
+}
+
+.login-box .title .look img{
+
+  width:100%;
+  height:100%;
+
+}
+.login-box .title h2 {
+  vertical-align:middle;
+    display:inline-block;
+  color: #fff;
+  margin-left:20px;
+}
+
+.login-box .user-box {
+  position: relative;
+}
+
+.login-box .user-box input {
+  width: 100%;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #fff;
+  margin-bottom: 30px;
+  border: none;
+  border-bottom: 1px solid #fff;
+  outline: none;
+  background: transparent;
+}
+.login-box .user-box label {
+
+  top:0;
+  left: 0;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #fff;
+  pointer-events: none;
+  transition: .5s;
+}
+
+.login-box .user-box input:focus ~ label,
+.login-box .user-box input:valid ~ label {
+  top: -20px;
+  left: 0;
+  color: #0ff;
+  font-size: 12px;
+}
+
+.login-box form a {
+  position: relative;
+  display: inline-block;
+  font-size: 16px;
+  text-decoration: none;
+  overflow: hidden;
+  transition: .5s;
+  margin-top: 40px;
+}
+
+.login-box a:hover {
+  background: #0ff;
+  border-radius: 5px;
+  box-shadow: 0 0 20px 10px #0ff;
+}
+
+.login-box a:hover input{
+  color: #fff;
+}
+
+.login-box a span {
+  position: absolute;
+  display: block;
+}
+
+.login-box a span:nth-child(1) {
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #0ff);
+  animation: btn-anim1 1s linear infinite;
+}
+
+@keyframes btn-anim1 {
+  0% {
+    left: -100%;
+  }
+  50%,100% {
+    left: 100%;
+  }
+}
+
+.login-box a span:nth-child(2) {
+  top: -100%;
+  right: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(180deg, transparent, #0ff);
+  animation: btn-anim2 1s linear infinite;
+  animation-delay: .25s
+}
+
+@keyframes btn-anim2 {
+  0% {
+    top: -100%;
+  }
+  50%,100% {
+    top: 100%;
+  }
+}
+
+.login-box a span:nth-child(3) {
+  bottom: 0;
+  right: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(270deg, transparent, #0ff);
+  animation: btn-anim3 1s linear infinite;
+  animation-delay: .5s
+}
+
+@keyframes btn-anim3 {
+  0% {
+    right: -100%;
+  }
+  50%,100% {
+    right: 100%;
+  }
+}
+
+.login-box a span:nth-child(4) {
+  bottom: -100%;
+  left: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(360deg, transparent, #0ff);
+  animation: btn-anim4 1s linear infinite;
+  animation-delay: .75s
+}
+
+@keyframes btn-anim4 {
+  0% {
+    bottom: -100%;
+  }
+  50%,100% {
+    bottom: 100%;
+  }
+}
+.login-box a input {
+  border:0px;
+  width: 100%;
+  height: 100%;
+  background-color:transparent;
+  letter-spacing: 4px;
+  padding: 10px 20px;
+  text-shadow:0px 0px 5px #0ff; 
+  color: #0ff;
+  transition: .5s;
+  text-transform: uppercase;
+}
+@media (max-height: 400px) {
+        .login-box{
+            top:0px;
+          transform: translatex(-50%);
+        }
+}
+@media (max-width: 350px) {
+        .login-box{
+            left:30px;
+          transform:translatey(-50%);
+        }
+}
+@media (max-width: 350px) and (max-height: 400px){
+
+        .login-box{
+
+            left:30px;
+
+          top:0px;
+
+          transform:translatex(0%);
+
+        }
+
+}
+
