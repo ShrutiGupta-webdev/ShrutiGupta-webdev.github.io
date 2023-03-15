@@ -3,111 +3,120 @@
 /* font-family: 'Courgette', cursive;
 font-family: 'Patrick Hand SC', cursive;
  font-family: 'Satisfy', cursive;
-*/ 
+*/
 
 body {
-	font-family: 'Alegreya', serif;
-	margin: 0;
-	padding: 0;
+  font-family: 'Alegreya', serif;
+  margin: 0;
+  padding: 0;
 
 }
 
 header {
   position: fixed;
   width: 100%;
-	background-image: linear-gradient( 63.1deg,  rgb(0, 0, 0) 16.4%, #3c0263 64.5% );
-	color: #fff;
-	padding-left: 20px;
+  background-image: linear-gradient(63.1deg, rgb(0, 0, 0) 16.4%, #3c0263 64.5%);
+  color: #fff;
+  padding-left: 20px;
   box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
   text-align: center;
   z-index: 3;
 }
-nav h1{
+
+nav h1 {
   font-size: 1.5rem;
   margin-left: 30px;
 }
-nav{display: flex;
-justify-content: space-between;
-margin-right: 20px;
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 20px;
 }
+
 nav ul {
   width: 60%;
   align-items: center;
   display: flex;
-	list-style: none;
+  list-style: none;
   justify-content: space-evenly;
-	margin: 0;
-	padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 nav ul li {
- 
-	margin-right: 20px;
+
+  margin-right: 20px;
   padding: 10px 0;
 }
 
 nav ul li a {
-	color: #fff;
-	text-decoration: none;
+  color: #fff;
+  text-decoration: none;
   font-size: 1.3rem;
   align-items: center;
 
 }
-nav ul li:hover{
+
+nav ul li:hover {
   /* border-bottom:2px solid #0ff; */
-  border-bottom:2px solid #0ff;
+  border-bottom: 2px solid #0ff;
   transform: translateY(-8px);
   color: #0ff;
-  
-  transition: 0.5s linear ;
+
+  transition: 0.5s linear;
 
 }
 
 
 #hero {
-  height: 75vh;
+  height: 65vh;
   background-image: url("https://image.lexica.art/full_jpg/c69e1367-7b1d-45cf-9507-f41b83a8d96c");
-	background-size: 100%;
-	background-position: center ;
-	color: #ffffff;
- padding-top: 150px;
- padding-bottom: 100px;
-	text-align: center;
+  background-size: 100%;
+  background-position: center;
+  color: #ffffff;
+  padding-top: 150px;
+  padding-bottom: 100px;
+  text-align: center;
   background-repeat: no-repeat;
-  
+
 }
-.herotitle{
+
+.herotitle {
   background-image: url("");
   display: flex;
-  justify-content: center;
+  justify-content:space-evenly;
   align-items: center;
   border-radius: 10px;
-  
+
 }
-#nametext{
+
+#nametext {
   margin-top: -15px;
   margin-bottom: -10px;
   font-size: 70px;
-	font-family: 'Alegreya', serif; 
+  font-family: 'Alegreya', serif;
 }
-#headingtext{
+
+#headingtext {
   margin: 20px 100px;
   width: 300px;
   font-size: 70px;
-  font-family: 'Alegreya', serif; 
-   text-align: center;
+  font-family: 'Alegreya', serif;
+  text-align: center;
   border-bottom: 10px solid #3c0263;
-  border-bottom-left-radius:10px ;
+  border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
- 
+
 }
 
-.myimg img{
+.myimg img {
   width: 350px;
   height: 400px;
   border-radius: 50%;
   border: 10px solid white;
 }
+
 /* #herobtn{
   font-family: 'Patrick Hand SC', cursive;
   color:white;
@@ -121,182 +130,206 @@ nav ul li:hover{
 
 .noselect {
   -webkit-touch-callout: none;
-    -webkit-user-select: none;
-     -khtml-user-select: none;
-       -moz-user-select: none;
-        -ms-user-select: none;
-            user-select: none;
-		-webkit-tap-highlight-color: transparent;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
 }
 
 button {
-	width: 75px;
-	height: 75px;
-	cursor: pointer;
-	background-color: #5de6de;
-	background-image: linear-gradient(315deg, #5de6de 0%, #b58ecc 74%);
-	border: none;
-	border-radius: 50%;
-	transition: 200ms;
+  width: 75px;
+  height: 75px;
+  cursor: pointer;
+  background-color: #5de6de;
+  background-image: linear-gradient(315deg, #5de6de 0%, #b58ecc 74%);
+  border: none;
+  border-radius: 50%;
+  transition: 200ms;
   box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }
 
 button svg {
-	fill: white;
-	width: 30px;
-	height: 30px;
-	position: absolute;
-	transform: translateX(-50%) translateY(-50%) rotate(180deg);
- 
-  
+  fill: white;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  transform: translateX(-50%) translateY(-50%) rotate(180deg);
+
+
 }
 
 button:before {
 
-	content: 'Explore More';
-	position: absolute;
-	transform: translateX(-50%) translateY(45px);
-	font-size: 15px;
-	transition: 200ms;
-	color: transparent;
-	font-weight: bold;
+  content: 'Explore More';
+  position: absolute;
+  transform: translateX(-50%) translateY(45px);
+  font-size: 15px;
+  transition: 200ms;
+  color: transparent;
+  font-weight: bold;
 }
 
 button:hover {
-	box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
-	transform: translateY(-10px);
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  transform: translateY(-10px);
 }
 
 button:hover::before {
-	color: #ffffff; 
+  color: #ffffff;
 }
 
 button:hover svg {
-		animation: bounce 1s infinite linear;
+  animation: bounce 1s infinite linear;
 }
-#my{
-  color:#b700ff
+
+#my {
+  color: #b700ff
 }
-#nametext>span:hover{
+
+#nametext>span:hover {
   color: #fff;
-  transition: 0.1s ;
+  transition: 0.1s;
 
 }
+
 @keyframes bounce {
-	0% {transform: translateX(-50%) translateY(-50%) rotate(180deg)}
-	25% {transform: translateX(-50%) translateY(-65%) rotate(180deg)}
-	50% {transform: translateX(-50%) translateY(-50%) rotate(180deg)}
-	75% {transform: translateX(-50%) translateY(-35%) rotate(180deg)}
-	100% {transform: translateX(-50%) translateY(-50%) rotate(180deg)}
+  0% {
+    transform: translateX(-50%) translateY(-50%) rotate(180deg)
+  }
+
+  25% {
+    transform: translateX(-50%) translateY(-65%) rotate(180deg)
+  }
+
+  50% {
+    transform: translateX(-50%) translateY(-50%) rotate(180deg)
+  }
+
+  75% {
+    transform: translateX(-50%) translateY(-35%) rotate(180deg)
+  }
+
+  100% {
+    transform: translateX(-50%) translateY(-50%) rotate(180deg)
+  }
 }
 
 .noselect:focus {
-	outline: none;
+  outline: none;
 }
-#about{
+
+#about {
   align-items: center;
-  background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(255,94,247,1) 17.8%, rgba(2,245,255,1) 100.2% );
+  background-image: radial-gradient(circle farthest-corner at 10% 20%, rgba(255, 94, 247, 1) 17.8%, rgba(2, 245, 255, 1) 100.2%);
   background-size: 100%;
-	background-position: center;
+  background-position: center;
   color: #ffffff;
-	padding: 100px 50px;
-	text-align: center;
-  display:flex ;
+  padding: 100px 50px;
+  text-align: center;
+  display: flex;
   height: 80vh;
 }
+
 #about h2 {
-	margin-top: 0;
+  margin-top: 0;
 }
-.innerdiv{
+
+.innerdiv {
   color: black;
-  background-image: linear-gradient( 174.2deg,  rgba(255,244,228,1) 7.1%, rgba(240,246,238,1) 67.4% );
+  background-image: linear-gradient(174.2deg, rgba(255, 244, 228, 1) 7.1%, rgba(240, 246, 238, 1) 67.4%);
   box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
-   margin: 0 50px; 
-   border-radius: 50px;
-   height: fit-content;
-   align-items: center;
-text-align: center;
-align-items: center; 
-padding:50px ;
+  margin: 0 50px;
+  border-radius: 50px;
+  height: fit-content;
+  align-items: center;
+  text-align: center;
+  align-items: center;
+  padding: 50px;
 }
+
 .gallery {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-between;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .gallery a {
-	flex: 0 1 calc(33.3% - 10px);
-	margin-bottom: 20px;
+  flex: 0 1 calc(33.3% - 10px);
+  margin-bottom: 20px;
 }
 
 .gallery img {
-	display: block;
-	max-width: 100%;
+  display: block;
+  max-width: 100%;
 }
 
 .card-container {
-    -webkit-perspective: 500px;
-            perspective: 500px;
+  -webkit-perspective: 500px;
+  perspective: 500px;
 }
 
-.card-container:hover .card{
-    -webkit-transform: rotateY( 180deg );
-            transform: rotateY( 180deg );
+.card-container:hover .card {
+  -webkit-transform: rotateY(180deg);
+  transform: rotateY(180deg);
 }
 
 .card {
-    -webkit-transition: -webkit-transform 2s;
-            transition: transform 2s;
-    -webkit-transform-style: preserve-3d;
-            transform-style: preserve-3d;
+  -webkit-transition: -webkit-transform 2s;
+  transition: transform 2s;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
 }
 
-.front, .back {
-    -webkit-backface-visibility: hidden;
-            backface-visibility: hidden;
+.front,
+.back {
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
 }
 
 .back {
-    -webkit-transform: rotateY( 180deg );
-            transform: rotateY( 180deg );
+  -webkit-transform: rotateY(180deg);
+  transform: rotateY(180deg);
 }
 
 /*Custom Styles*/
-.cards-container{
-   display: -webkit-flex;
-   display: -webkit-box;
-   display: -ms-flexbox;
-   display: flex;
-   -webkit-flex-direction: row;
-   -webkit-box-orient: horizontal;
-   -webkit-box-direction: normal;
-       -ms-flex-direction: row;
-           flex-direction: row;
+.cards-container {
+  display: -webkit-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 .card {
-  width:500px;
-	height:620px;
-  margin: 20px 30px;
+  width: 500px;
+  height: 620px;
+  margin: 20px 70px;
   border-radius: 20px;
-  
+
 }
+
 .cardhero {
   width: 350px;
-	height:400px;
+  height: 400px;
 
-  
+
 }
 
-.front, .back {
+.front,
+.back {
   box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
   padding: 10px;
-  height:auto !important;
+  height: auto !important;
   border-radius: 20px;
   position: absolute;
   width: 100%;
@@ -304,51 +337,115 @@ padding:50px ;
   bottom: 0;
 
 }
-.front:hover, .back:hover {
+
+.front:hover,
+.back:hover {
   box-shadow: rgba(99, 2, 94, 0.45) 0px 25px 20px -5px;
 }
-#portfolio{
+
+#portfolio {
+
   padding: 50px 20px 150px 20px;
+ 
 }
-#desc{
+#desc {
   margin-left: 55px;
   font-weight: 400;
-  color:#313131;
+  color: rgb(71, 71, 71);
   font-size: 1.2rem;
 }
-#Pname{
+
+#Pname {
   margin-top: 15px;
-  margin-bottom:-10px ;
+  margin-bottom: -10px;
   letter-spacing: 3px;
   font-size: 40px;
 }
-#Dname{
+
+#Dname {
   margin-top: -10px;
-  margin-bottom:-10px ;
+  margin-bottom: -10px;
   letter-spacing: 2px;
   font-size: 30px;
-  color: #3c0263;
+  color: #570091;
 }
-#pbtn{
+
+#pbtn {
   border-radius: 7px;
- margin-right:20px;
+  margin-right: 20px;
   padding: 7px 10px;
   text-decoration: none;
   color: #490046;
   font-size: 1.5rem;
   box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }
-#pbtn:hover{
+
+#pbtn:hover {
   box-shadow: rgba(88, 2, 99, 0.45) 0px 25px 20px -5px;
   color: green;
   transition: 0.3s;
-  }
-#Tskills{
-  background-image: url("https://image.lexica.art/full_jpg/bce0b23e-e275-4c61-9f45-e45cbf1db80c");
-  background-size: cover;
-  width: auto;
-  height: 180vh;
 }
+
+#Tskills {
+  background-image: linear-gradient(358.4deg, rgba(249, 151, 119, 1) -2.1%, rgba(98, 58, 162, 1) 90%);
+  height: auto;
+  padding-bottom: 100px;
+}
+#Cskill {
+  background-image: linear-gradient( 109.6deg,  rgba(238,58,136,1) 11.2%, rgba(128,162,245,1) 91.1% );
+ 
+  padding-bottom: 100px;
+}
+
+.Tskills {
+  color: white;
+  padding: 100px 0 20px 0;
+}
+
+.logo {
+  display: grid;
+  gap: 80px;
+  grid-template-columns: repeat(4, 1fr);
+  justify-content: center;
+  margin: auto;
+  padding: 20px 100px;
+
+}
+
+.logo img {
+  width: 150px;
+  height: 150px;
+  border-radius: 30%;
+}
+
+.logo div {
+  padding: 20px 10px;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  text-align: center;
+  height: 230px;
+  background-image: linear-gradient(63.1deg, rgba(0, 0, 0, 0.514) 16.4%, #3c02638e 64.5%);
+  border-radius: 20px;
+}
+
+
+
+.skillname {
+  color: white;
+  font-size: 2rem;
+}
+
+.logo div:hover {
+  background-image: linear-gradient(63.1deg, rgba(0, 0, 0, 0.993) 16.4%, #3c0263 64.5%);
+  transform: translateY(-10px);
+  transition: 0.2s;
+}
+#contact {
+  margin-top: -21px;
+  background-image: url("");
+  height: 45vh;
+  background-position: center;
+}
+
 
 /* Carouseel button css START here */
 /* 
