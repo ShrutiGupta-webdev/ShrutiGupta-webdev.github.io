@@ -16,7 +16,7 @@
         <li><a href="#about">About</a></li>
         <li><a href="#Tskills">Skills</a></li>
         <li><a href="#portfolio">Projects</a></li>
-        <li><a href="#">Contact</a></li>
+        <li><a href="#contact">Contact</a></li>
         <li><a href="Shruti-Gupta-Resume.pdf" download="Shruti-Gupta-Resume" target="_blank"
             onclick="window.open('https://drive.google.com/file/d/1a6JWMTzyKGeB4IbuHQ6BXpt2bPIQZhVl/view?usp=share_link');">Resume</a>
         </li>
@@ -27,8 +27,8 @@
   <main>
     <section id="hero">
       <div class="herotitle">
-        <div style=" background-color: #1e0733cc;
-      box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset; margin: 0 50px 0 100px; border-radius: 50px;align-items: center;padding:10px 10px 40px 10px;
+        <div style="width: 40%; background-color: #1e0733cc;
+      box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset; margin: 0 50px 0 100px; border-radius: 50px;align-items: center; padding: 20px 50px ;
     text-align: center;align-items: center;">
 
           <h1>Welcome to my Portfolio!</h1>
@@ -36,7 +36,7 @@
           <h1> and I specialize in Technical Support</h1>
           <!-- <button id="herobtn"><h3>Explore</h3></button> -->
           <div class="herobtn">
-            <button class="noselect"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+            <button onclick="location.href='#about'" class="noselect"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
                 <path d="M0 16.67l2.829 2.83 9.175-9.339 9.167 9.339 2.829-2.83-11.996-12.17z" />
               </svg></button>
           </div>
@@ -53,16 +53,9 @@
 
 
     <section id="about">
-      <div class="myimg">
-        <div class="card-container">
-          <div class="card cardhero">
-            <div style="border-radius: 50%;" class="front">
-              <img src="https://image.lexica.art/full_jpg/1adb00b2-907a-4583-ba96-77c35da13703">
-            </div>
-            <div style="border-radius: 50%;" class="back">
-              <img src="myimg2.png">
-            </div>
-          </div>
+      <div  class="myimg">
+        <div style="box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset; border-radius: 50%;" >
+          <img   src="myimg.jpeg" alt="">
         </div>
       </div>
       <div class="innerdiv">
@@ -348,36 +341,96 @@
         </div>
       </div>
     </section>
-    <section id="contact">
-      <h2>Contact Me</h2>
-      <div>
-        <div>
-          <div>
-            <img src="" alt="">
-            <a href="tel:+91983405178">+91 9834041578</a>
-          </div>
-          <div>
-            <img width="100px" height="100px" src="https://image.lexica.art/full_jpg/b3815608-294b-4342-a102-332082db2831" alt="mail">
-            <a href="mailto:shrutirgupta.srgs@gmail.com">shrutirgupta.srg@gmail.com</a>
-          </div>
+    <section style="background-image: linear-gradient( 358.4deg,  rgba(249,151,119,1) -2.1%, rgba(98,58,162,1) 90% );" id="Cskill">
+      <div style="padding: 50px 0; display: flex;">
+        <img style="border-radius: 50%;margin-left:350px; margin-top: 30px;" width="80px" height="90px" src="Skills.png"
+          alt="">
+        <h2 style=" width: 350px; color: whitesmoke;" id="headingtext">Soft Skill</h2>
+      </div>
+      <div class="logo">
+        <div style="height: 320px;"><img
+            src="https://voices.shortpedia.com/wp-content/uploads/2021/03/critical-thinking.jpg"
+            alt="Linux">
+          <h2 class="skillname">Problem Solving</h2>
         </div>
-        <div>
-          <input type="email" placeholder="Drop you Email here" id="email">
-          <input type="text" placeholder="Subject" id="sub">
-          <input type="text" placeholder="Subject descreption" id="body">
-          <button onclick="sendEmail()">Contact Me</button>
+        <div style="height: 320px;"><img
+            src="https://us.123rf.com/450wm/blocberry/blocberry2002/blocberry200200016/140688444-successful-business-leader-help-his-team-climb-the-highest-bar-chart-business-teamwork-concept.jpg?ver=6"
+            alt="Operating system">
+          <h2 class="skillname">Leadership Skills</h2>
+        </div>
+        <div style="height: 320px;"><img
+            src="https://media.licdn.com/dms/image/C4E12AQEPknDYlAhYOg/article-cover_image-shrink_600_2000/0/1552224151838?e=2147483647&v=beta&t=_HMl2Zn5Ekz-QpCgWCokEO3TkSAUFOmHlPs6Gy-e2qk">
+          <h2 class="skillname">Assertive Communication</h2>
+        </div>
 
+        <div style="height: 320px;"><img
+            src="https://qph.cf2.quoracdn.net/main-qimg-a79ce3ea254266af2c26ab8767f0b270-lq">
+          <h2 class="skillname">Strategic & Creative Planning</h2>
         </div>
-        <div>
-          <img src="https://image.lexica.art/full_jpg/5c5f0f28-e6dd-4940-ac8f-e6f16f736046" alt="">
+        <div style="padding: 20px 10px;
+       box-shadow: none;
+       height: 230px;
+       background-image: none;
+       "></div>
+        <div style="height: 320px;"><img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnrWltnwFxy09Upo3vKElDLCuWeW-A3rQ8-40bApUI5ORP-HC6b-LwLJPWXF7-mgPuUTM&usqp=CAU">
+          <h2 class="skillname">Compassionate</h2>
         </div>
+        <div style="height: 320px;"><img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkuIzHcDoTRjKT2O0sJyYdKoKIBAwW77xDSN3alclwO1wBHfgcF73QY-YRZ0jk_2_iG6w&usqp=CAUs">
+          <h2 class="skillname">Empathetic</h2>
+        </div>
+      </div>
+    </section>
+    <section id="contact">
+      <h2 style=" border-bottom: 10px solid rgb(158, 7, 146); width: 350px; color: whitesmoke; margin:auto" id="headingtext">Contact Me</h2>
+      <div>
+        <div id="call">
+          <div>
+            <img width="50px" height="50px" src="https://static.vecteezy.com/system/resources/previews/011/964/952/original/3d-location-sign-or-3d-rendering-map-png.png" alt="">
+            <a id="icontext" href="https://www.google.com/maps/place/Gupta+Oil+Mill/@20.9326072,77.7527167,3a,75y,111.01h,97.49t/data=!3m6!1e1!3m4!1suMAVm6rJpGW0s5-DpHQZVw!2e0!7i13312!8i6656!4m6!3m5!1s0x3bd6a4a90e94014b:0x6b0ec5b49faefde8!8m2!3d20.932481!4d77.7527407!10e5" target="_blank">Amravati, Maharashtra.</a>
+          </div>
+          <div>
+            <img width="50px" height="50px" src="https://static.vecteezy.com/system/resources/previews/010/063/531/original/phone-call-icon-with-conversation-3d-render-png.png" alt="">
+            <a id="icontext" href="tel:+91983405178">+91 9834041578</a>
+          </div>
+          <div>
+            <img width="40px" height="40px" style="border-radius: 50%;" src="https://image.lexica.art/full_jpg/b3815608-294b-4342-a102-332082db2831" alt="mail">
+            <a id="icontext" href="mailto:shrutirgupta.srgs@gmail.com">shrutirgupta.srg@gmail.com</a>
+          </div>
+          <div>
+            <img width="50px" height="50px" style="border-radius: 50%;" src="https://cdn3d.iconscout.com/3d/free/thumb/github-2950150-2447911.png" alt="mail">
+            <a id="icontext" href="https://github.com/ShrutiGupta-webdev">Github</a>
+          </div>
+          <div>
+            <img width="50px" height="50px" style="border-radius: 50%;" src="https://cdn3d.iconscout.com/3d/free/thumb/linkedin-2950130-2447889.png" alt="mail">
+            <a id="icontext" href="https://www.linkedin.com/in/shruti-r-gupta/">LinkedIn</a>
+          </div>
+       
+        </div>
+        <div id="lastdiv">
+          <div>
+            <img style="background-color:white;box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -6px, rgba(0, 0, 0, 0.2) 0px -6px 0px inset;border-radius: 40%;padding: 20px;" width="300px" height="350px" src="https://image.lexica.art/full_jpg/5c5f0f28-e6dd-4940-ac8f-e6f16f736046" alt="">
+          </div>
+          <div class="form">
+            <input type="email" placeholder="Drop you Email here" id="email">
+            <input type="text" placeholder="Subject" id="sub">
+            <input type="text" placeholder="Subject descreption" id="body">
+            <a id="contactbtn" style="" onclick="sendEmail()">Contact Me</a>
+  
+          </div>
+        </div>
+        
+      </div>
+      <div id="footer">
+        <p style="margin:0 20px">&copy; 2023 Shruti Gupta's Portfolio</p>
       </div>
     </section>
   </main>
 
-  <footer>
-    <p>&copy; 2023 My Portfolio</p>
-  </footer>
+ 
+    
+ 
 </body>
 <script src="index.js"></script>
 

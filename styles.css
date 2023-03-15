@@ -116,6 +116,11 @@ nav ul li:hover {
   border-radius: 50%;
   border: 10px solid white;
 }
+.myimg div:hover{
+
+  transform: translateY(-10px);
+  transition: 0.5s;
+}
 
 /* #herobtn{
   font-family: 'Patrick Hand SC', cursive;
@@ -440,13 +445,85 @@ button:hover svg {
   transition: 0.2s;
 }
 #contact {
-  margin-top: -21px;
-  background-image: url("");
-  height: 45vh;
+  
+  background-image: linear-gradient(63.1deg, rgb(0, 0, 0) 16.4%, #3c0263 64.5%);
   background-position: center;
 }
 
+#call{
+  padding: 50px;
+  display:grid;
+ justify-content: center;
+  grid-template-columns: auto auto auto;
+  gap: 20px;
+  border-bottom: 2px solid aqua;
+}
+#icontext{
+  margin-left: 20px;
+  font-size: 30px;
+  text-decoration: none;
+  color: white;
+}
+#call div{
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  border-radius: 20px;
+  background-color: #b700ff6e;
+}
+#call div:hover{
+  transform: translateY(-5px);
+   border-bottom: 2px solid aqua;
+  transition: 0.3s;
+}
+#contactbtn{
+  margin: auto;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+   padding: 10px 20px;
+    width: 120px;border-radius: 10px;
+    color: white;
+    font-size: 1.5rem;
+    background-image: radial-gradient( circle farthest-corner at 32.7% 82.7%,  rgba(173,0,171,1) 8.3%, rgba(15,51,92,1) 79.4% );
+}
+#contactbtn:active{
+  transform: translateY(-10px);
+  transition: 0.3s;
+}
+#contactbtn:hover{
+  background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(255,94,247,1) 17.8%, rgba(2,245,255,1) 100.2% );
+  color: #3c0263;
+  border-bottom:2px solid #b700ff;
+}
+#lastdiv{
+  align-items: center;
+ border-bottom:2px solid #b700ff;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 50px;
+}
+.form {
+  border-radius:20px;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -6px, rgba(0, 0, 0, 0.2) 0px -6px 0px inset;
+  padding: 20px;
+  width: 40%;
+  display: grid;
+  gap: 20px;
+  grid-template-rows: 50px 50px 50px 50px ;
+  background: white;
+}
+.form input{
+  border-radius: 20px;
+  padding: 10px;
+ 
+  border: 2px solid #54008b;
+}
+#footer{
 
+  font-size: 1.3rem;
+text-align: center;
+  background-color: #fff;
+}
 /* Carouseel button css START here */
 /* 
 .carousel-container {
