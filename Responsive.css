@@ -1,6 +1,190 @@
 /* navbar responsive start here */
 
+/* tablet screen mode  */
+/* @media (min-width:780px) and
+(max-width:1080px) {
+   .hamburger{
+    display:block;
+   }
+   .mainnav{
+    display: none;
+   }
+  } */
 
-@media (max-width:780px) {
-   
-  }
+
+/* mobile screen mode  */
+  @media (min-width:300px) and (max-width:1000px) {
+    
+    .hamburger{
+      display:block;
+     }
+     .mainnav{
+      display: none;
+     }
+     .herotitle{
+      
+      flex-direction: column-reverse;
+    
+     }
+     #hero{
+     
+      padding: 100px 20px 50px 20px;
+     }
+     #hero1{
+     width: 100% !important;
+      margin: 20px !important;
+      padding: 20px !important;
+      padding-bottom: 50px !important;
+     }
+    #hero1 h1{
+      font-size:20px;
+    }
+    #crystal{
+      height: 300px;
+      width: 300px;
+    }
+    #nametext{
+      font-size: 50px !important ;
+    }
+    #about{
+      flex-direction: column;
+      padding: 70px 20px 50px;
+    }
+    .myimg img{
+      width: 300px;
+      height: 350px;
+    }
+    .innerdiv{
+      margin-top: 40px;
+      width: 100%;
+      padding: 20px;
+      margin-bottom: 20px;
+     
+    }
+    #headingtext{
+       margin: 20px !important;
+       width:fit-content !important;
+       font-size: 40px;
+    }
+    .innerdiv p{
+      text-align: center;
+      font-size: 1rem;
+    }
+    /* bullet icons  */
+    .innerdiv img,#headingtitle img, #Tskills #headingtitle img, #Cskill #headingtitle img, #Sskill #headingtitle img{
+      margin-top: 5px;
+      width: 50px;
+      height: 60px;
+      margin-left: 0;
+      
+    }
+    #project{
+      padding: 50px 20px;
+    }
+    
+    #headingtitle{
+      width: fit-content;
+      margin: auto;
+      padding: 20px;
+      text-align: center;
+      align-items: center;
+    }
+
+    .Proj1{
+      flex-direction: column;
+      margin: 10px ;
+      padding: 50px 20px;
+    }
+    .div1 #Pname, .div1 #desc,.div1 #Dname {
+      text-align: center;
+      width: fit-content;
+      margin: auto;
+      
+    }
+    #desc{
+      font-size: 1rem;
+    }
+     #Dname{
+      width: fit-content;
+      margin: auto;
+    }
+    .lap1 {
+      width: 250px;
+      height:300px;
+      border-radius: 20px;
+    }
+    #pbtn{
+    margin: auto;
+    }
+    .div2{
+      width: 100%;
+      margin-left: 0;
+      padding-bottom: 40px;
+    }
+    .div3{
+      margin: 0;
+      text-align: center;
+    }
+    .div3 img{
+      width: 300px;
+      height: 200px;
+    }
+   #Tskills #headingtext{
+    font-size: 38px;
+    }
+    #Tskills{
+      padding-bottom: 50px;
+    }
+    .logo{
+      padding: 20px !important;
+      gap:10px;
+      grid-template-columns: repeat(2,1fr);
+    }
+    .logo div{
+      padding: 10px;
+    }
+    .logo img{
+      width: 120px;
+      height: 120px;
+    }
+    .skillname{
+      font-size: 1.5rem;
+    }
+    .emptydiv{
+      display: none;
+    }
+    #Cskill{
+      padding-top:10px
+    }
+    #Sskill{
+      padding:50px 0;
+    }
+    #contact h2{
+     
+     margin: auto !important;
+    }
+    #contact div{
+      padding: 20px;
+      grid-template-columns: auto;
+      gap: 20px;
+      padding-bottom: 50px;
+    }
+    #icontext{
+      font-size: 1.17rem;
+    }
+
+    #call div{
+     padding: 10px;
+      width: 100%;
+    }
+    #lastdiv{
+      flex-direction: column;
+    }
+    .form{
+      width: 100%;
+    }
+    #footer{
+      margin-bottom: -100px;
+    }
+
+ }

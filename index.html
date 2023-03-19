@@ -11,7 +11,9 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
     integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/js/all.min.js" integrity="sha512-2bMhOkE/ACz21dJT8zBOMgMecNxx0d37NND803ExktKiKdSzdwn+L7i9fdccw/3V06gM/DBWKbYmQvKMdAA9Nw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/js/all.min.js"
+    integrity="sha512-2bMhOkE/ACz21dJT8zBOMgMecNxx0d37NND803ExktKiKdSzdwn+L7i9fdccw/3V06gM/DBWKbYmQvKMdAA9Nw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
 </head>
 
@@ -39,12 +41,14 @@
 
   </nav>
   <div class="hamburger">
-
-    <button onclick="display()" class="navbtn1"><i class="fa-duotone fa-bars"></i></button>
+    <h1>
+      < Shruti-gupta />
+    </h1>
+    <button onclick="display()" class="navbtn1"><i class="fa-solid fa-bars"></i></button>
 
     <div class="resp-ul">
       <ul>
-        <button onclick="Remove()" class="navbtn2"><i class="fa-duotone fa-circle-xmark"></i></button>
+        <button onclick="Remove()" class="navbtn2"><i class="fa-regular fa-rectangle-xmark"></i></button>
         <li><a href="index.html">Home</a></li>
         <li><a href="#about">About</a></li>
         <li><a href="#Tskills">Skills</a></li>
@@ -60,10 +64,7 @@
   <main>
     <section id="hero">
       <div class="herotitle">
-        <div style="width: 40%; background-color: #1e0733cc;
-                box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset; margin: 0 50px 0 100px; border-radius: 50px;align-items: center; padding: 20px 50px ;
-              text-align: center;align-items: center;">
-
+        <div id="hero1">
           <h1>Welcome to my Portfolio!</h1>
           <h1 id="nametext">I am <br> <span id="my"><em>Shruti Gupta</em></span> </h1>
           <h1> and I specialize in Technical Support</h1>
@@ -76,7 +77,7 @@
           </div>
         </div>
         <div>
-          <img width="400px" height="500px"
+          <img id="crystal"
             src="https://media0.giphy.com/media/gimklXHKgIx1u/giphy.gif?cid=6c09b952w9os00b2x5lerg97iu47hg3gvsnuw7aydf8u5lsr&rid=giphy.gif&ct=s"
             alt="">
         </div>
@@ -87,20 +88,16 @@
 
     <section id="about">
       <div class="myimg">
-        <div
-          style="box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset; border-radius: 50%;">
+        <div>
           <img src="myimg.jpeg" alt="">
         </div>
       </div>
       <div class="innerdiv">
-        <div style="display: flex; justify-content: center;"><img style="border-radius: 50%;margin-top: 20px;"
-            width="80px" height="90px" src="about.png" alt="icon">
+        <div><img src="about.png" alt="icon">
           <h2 id="headingtext">About Me</h2>
         </div>
-
-
         <br>
-        <p style="font-size: 1.5rem; text-align: justify;">Eager to learn new technologies and prototype new ideas. An
+        <p>Eager to learn new technologies and prototype new ideas. An
           enthusiast in doing
           hands on practical work. Proficient in C++, HTML 5, JavaScript, Bootstrap and Linux PowerShell Operation
           commands. Ability to learn new software and technologies quickly. Capability to work in teams by providing
@@ -110,10 +107,8 @@
 
     </section>
     <section id="project">
-      <div style="padding: 50px 0; display: flex;">
-        <img
-          style="box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;border-radius: 50%;margin-left:350px; margin-top: 30px;"
-          width="80px" height="90px" src="project.png" alt="">
+      <div  id="headingtitle">
+        <img src="project.png" alt="">
         <h2 id="headingtext">Projects</h2>
       </div>
 
@@ -122,9 +117,10 @@
         <div class="div1">
           <div>
             <h1 id="Pname">
-             Freshwork
+              Freshwork
             </h1>
-            <p id="desc">Freshworks builds tech that works for everyone, making it easy for IT, customer service, sales, marketers and HR to do their job and delight their customers.</p>
+            <p id="desc">Freshworks builds tech that works for everyone, making it easy for IT, customer service, sales,
+              marketers and HR to do their job and delight their customers.</p>
           </div>
           <div>
             <h3 id="Dname">
@@ -146,20 +142,21 @@
         </div>
         <!-- 3rd subdiv button and techstack-------------------------  -->
         <div class="div3">
-          <div> <h3 id="Dname">
-           Tech Stack</h3><img  src="TS-1.png" alt="">
+          <div>
+            <h3 id="Dname">
+              Tech Stack</h3><img src="TS-1.png" alt="">
           </div>
           <div>
             <h3 id="Dname">
-             Endeavors
+              Endeavors
             </h3>
             <p id="desc">Reasearch and analysis, User Onbording Process,Slides presentation.</p>
             <h3 id="Dname">
-             Group Project
+              Group Project
             </h3>
             <p id="desc">Completed within 2 days.</p>
           </div>
-        
+
         </div>
       </div>
       <!-- 2nd project div start here -->
@@ -193,19 +190,21 @@
         </div>
         <!-- 3rd subdiv button and techstack-------------------------  -->
         <div class="div3">
-          <div> <h3 id="Dname">
-           Tech Stack</h3><img  src="TS-2.png" alt=""></div>
           <div>
             <h3 id="Dname">
-             Endeavors
+              Tech Stack</h3><img src="TS-2.png" alt="">
+          </div>
+          <div>
+            <h3 id="Dname">
+              Endeavors
             </h3>
             <p id="desc">Dashboard Page, Checkout page and Product listing page with search functionality.</p>
             <h3 id="Dname">
-             Group Project
+              Group Project
             </h3>
             <p id="desc">Completed within 5 days and got shortlisted as a Runner-Up in Construct Week</p>
           </div>
-          
+
         </div>
       </div>
     </section>
@@ -220,11 +219,11 @@
 
       <div class="gallery">
        Projects great avatars ! -->
-        <!-- <div class="cards-container"> -->
-          <!--   First Card -->
-          <!-- <div class="carousel-container">
+    <!-- <div class="cards-container"> -->
+    <!--   First Card -->
+    <!-- <div class="carousel-container">
             <div class="carousel-slide"> -->
-          <!-- <div class="card-container">
+    <!-- <div class="card-container">
             <div class="card">
               <div class="front">
                 <div>
@@ -316,8 +315,8 @@
             </div>
           </div> -->
 
-          <!--   Third Card -->
-          <!-- <div class="card-container">
+    <!--   Third Card -->
+    <!-- <div class="card-container">
                   <div class="card">
                     <div class="front">
                       <img style="border-radius: 20px  20px  0 0;" src="P3.png">
@@ -362,14 +361,14 @@
                 </div> -->
 
 
-          <!--   EndCard -->
+    <!--   EndCard -->
 
 
 
-        <!-- </div> -->
+    <!-- </div> -->
 
 
-        <!-- </div>
+    <!-- </div>
                       <div class="carousel-buttons">
                         <button id="prevBtn">Prev</button>
                         <button id="nextBtn">Next</button>
@@ -377,13 +376,12 @@
 
                     </div>
                   </div> -->
-      <!-- </div>
+    <!-- </div>
     </section> -->
     <section id="Tskills">
-      <div style="padding: 50px 0; display: flex;">
-        <img style="border-radius: 50%;margin-left:250px; margin-top: 30px;" width="80px" height="90px"
-          src="https://image.lexica.art/full_jpg/4ccc9619-99a6-4a97-b9b7-1db68011da76" alt="">
-        <h2 style=" width: 500px; color: whitesmoke;" id="headingtext">Technical Skills</h2>
+      <div id="headingtitle">
+        <img src="https://image.lexica.art/full_jpg/4ccc9619-99a6-4a97-b9b7-1db68011da76" alt="">
+        <h2 id="headingtext">Technical Skills</h2>
       </div>
       <div class="logo">
         <div><img src="https://www.freepnglogos.com/uploads/linux-png/linux-logo-logo-brands-for-0.png" alt="Linux">
@@ -417,11 +415,7 @@
             alt="Linux">
           <h2 class="skillname">HTML</h2>
         </div>
-        <div style="padding: 20px 10px;
-       box-shadow: none;
-        height: 230px;
-        background-image: none;
-        "></div>
+        <div class="emptydiv"></div>
         <div><img
             src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/1452px-CSS3_logo_and_wordmark.svg.png"
             alt="Linux">
@@ -436,8 +430,8 @@
       </div>
     </section>
     <section id="Cskill">
-      <div style="padding: 50px 0; display: flex;">
-        <img style="border-radius: 50%;margin-left:200px; margin-top: 30px;" width="80px" height="90px" src="Tskill.png"
+      <div id="headingtitle">
+        <img src="Tskill.png"
           alt="">
         <h2 style=" width: 700px; color: whitesmoke;" id="headingtext"> Customer Service Skills</h2>
       </div>
@@ -461,13 +455,8 @@
             src="https://synnexfpt.com/wp-content/uploads/2022/10/Listening-skills-and-examples-of-effective-listening-in-the-workplace-3.jpg">
           <h2 class="skillname">Proactive Listening skills</h2>
         </div>
-        <div style="padding: 20px 10px;
-       box-shadow: none;
-       height: 230px;
-       background-image: none;
-       "></div>
-        <div><img
-            src="https://sanzubusinesstraining.com/wp-content/uploads/2020/12/RB_vector.png">
+        <div class="emptydiv"></div>
+        <div><img src="https://sanzubusinesstraining.com/wp-content/uploads/2020/12/RB_vector.png">
           <h2 class="skillname">Relationship Building</h2>
         </div>
         <div><img
@@ -476,16 +465,15 @@
         </div>
       </div>
     </section>
-    <section style="background-image: linear-gradient( 358.4deg,  rgba(249,151,119,1) -2.1%, rgba(98,58,162,1) 90% );"
-      id="Cskill">
-      <div style="padding: 50px 0; display: flex;">
-        <img style="border-radius: 50%;margin-left:350px; margin-top: 30px;" width="80px" height="90px" src="Skills.png"
+    <section
+      id="Sskill">
+      <div id="headingtitle">
+        <img src="Skills.png"
           alt="">
         <h2 style=" width: 350px; color: whitesmoke;" id="headingtext">Soft Skill</h2>
       </div>
       <div class="logo">
-        <div><img
-            src="https://voices.shortpedia.com/wp-content/uploads/2021/03/critical-thinking.jpg" alt="Linux">
+        <div><img src="https://voices.shortpedia.com/wp-content/uploads/2021/03/critical-thinking.jpg" alt="Linux">
           <h2 class="skillname">Problem Solving</h2>
         </div>
         <div><img
@@ -498,15 +486,10 @@
           <h2 class="skillname">Assertive Communication</h2>
         </div>
 
-        <div><img
-            src="https://qph.cf2.quoracdn.net/main-qimg-a79ce3ea254266af2c26ab8767f0b270-lq">
+        <div><img src="https://qph.cf2.quoracdn.net/main-qimg-a79ce3ea254266af2c26ab8767f0b270-lq">
           <h2 class="skillname">Strategic & Creative Planning</h2>
         </div>
-        <div style="padding: 20px 10px;
-       box-shadow: none;
-       height: 230px;
-       background-image: none;
-       "></div>
+        <div class="emptydiv"></div>
         <div><img
             src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnrWltnwFxy09Upo3vKElDLCuWeW-A3rQ8-40bApUI5ORP-HC6b-LwLJPWXF7-mgPuUTM&usqp=CAU">
           <h2 class="skillname">Compassionate</h2>
@@ -518,7 +501,7 @@
       </div>
     </section>
     <section id="contact">
-      <h2 style=" border-bottom: 10px solid rgb(158, 7, 146); width: 350px; color: whitesmoke; margin:auto"
+      <h2 style=" border-bottom: 10px solid rgb(158, 7, 146); width: fit-content; color: whitesmoke; margin:auto"
         id="headingtext">Contact Me</h2>
       <div>
         <div id="call">
@@ -544,12 +527,12 @@
           <div>
             <img width="50px" height="50px" style="border-radius: 50%;"
               src="https://cdn3d.iconscout.com/3d/free/thumb/github-2950150-2447911.png" alt="mail">
-            <a id="icontext"   target="_blank" href="https://github.com/ShrutiGupta-webdev">Github</a>
+            <a id="icontext" target="_blank" href="https://github.com/ShrutiGupta-webdev">Github</a>
           </div>
           <div>
             <img width="50px" height="50px" style="border-radius: 50%;"
               src="https://cdn3d.iconscout.com/3d/free/thumb/linkedin-2950130-2447889.png" alt="mail">
-            <a id="icontext"   target="_blank" href="https://www.linkedin.com/in/shruti-r-gupta/">LinkedIn</a>
+            <a id="icontext" target="_blank" href="https://www.linkedin.com/in/shruti-r-gupta/">LinkedIn</a>
           </div>
 
         </div>
