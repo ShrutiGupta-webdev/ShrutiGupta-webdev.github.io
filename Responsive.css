@@ -25,7 +25,9 @@
    #hero{
     height: auto;
    }
-   
+   .Proj1{
+    flex-flow: wrap;
+   }
       .lap1 {
         width:550px;
         height:560px;
