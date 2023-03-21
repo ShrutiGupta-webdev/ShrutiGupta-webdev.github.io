@@ -533,7 +533,7 @@ a {
   grid-template-columns: repeat(4, 1fr);
   justify-content: center;
   margin: auto;
-  padding: 20px 100px;
+  padding: 20px 100px !important;
 
 }
 
